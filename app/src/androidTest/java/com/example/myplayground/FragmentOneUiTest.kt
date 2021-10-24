@@ -31,10 +31,7 @@ class FragmentOneUiTest {
         val scenario = launchFragmentInContainer<FragmentOne>(
             initialState = Lifecycle.State.INITIALIZED
         )
-        // EventFragment has gone through onAttach(), but not onCreate().
-        // Verify the initial state.
         scenario.moveToState(Lifecycle.State.RESUMED)
-        // EventFragment moves to CREATED -> STARTED -> RESUMED.
     }
 
 //    @Test
