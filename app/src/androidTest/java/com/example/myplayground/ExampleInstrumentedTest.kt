@@ -78,8 +78,8 @@ class SearchUITests {
     @Test
     fun textViewHello_shouldNotDisplayed() {
         screen {
-            textViewHello.isNotDisplayed()
-            imageView.isNotDisplayed()
+            val a  = textViewHello.isNotDisplayed()
+            val b  = imageView.isNotDisplayed()
 //            textViewStoreComingSoon.isDisplayed()
 //            textViewStoreComingSoonDesc.isDisplayed()
 //            buttonContinue.isDisplayed()
