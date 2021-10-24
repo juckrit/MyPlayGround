@@ -35,9 +35,9 @@ class MainScreen : Screen<MainScreen>() {
     val textViewHello = KView{
         withId(R.id.textViewHello)
     }
-//    val imageViewStoreComingSoon = KImageView{
-//        withId(R.id.imageViewStoreComingSoon)
-//    }
+    val imageView = KImageView{
+        withId(R.id.imageView)
+    }
 //    val textViewStoreComingSoon = KTextView{
 //        withId(R.id.textViewStoreComingSoon)
 //    }
@@ -64,7 +64,7 @@ class SearchUITests {
     fun search_withEmptyText_shouldShowSnackbarError() {
         screen {
             textViewHello.isDisplayed()
-//            imageViewStoreComingSoon.isDisplayed()
+            imageView.isDisplayed()
 //            textViewStoreComingSoon.isDisplayed()
 //            textViewStoreComingSoonDesc.isDisplayed()
 //            buttonContinue.isDisplayed()
@@ -79,7 +79,7 @@ class SearchUITests {
     fun textViewHello_shouldNotDisplayed() {
         screen {
             textViewHello.isNotDisplayed()
-//            imageViewStoreComingSoon.isDisplayed()
+            imageView.isNotDisplayed()
 //            textViewStoreComingSoon.isDisplayed()
 //            textViewStoreComingSoonDesc.isDisplayed()
 //            buttonContinue.isDisplayed()
