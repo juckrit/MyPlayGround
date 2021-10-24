@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/design_default_color_primary_variant"
-    tools:context=".fragment.FragmentOne">
+    tools:context=".fragment.FirstFragment">
 
     <Button
         android:id="@+id/buttonToFragment2"

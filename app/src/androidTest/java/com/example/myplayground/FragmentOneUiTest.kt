@@ -1,17 +1,12 @@
 package com.example.myplayground
 
-import android.os.Bundle
-import androidx.fragment.app.FragmentFactory
-import androidx.fragment.app.testing.FragmentScenario
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.lifecycle.Lifecycle
-import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.filters.LargeTest
-import com.example.myplayground.fragment.FragmentOne
+import com.example.myplayground.fragment.FirstFragment
 import io.github.kakaocup.kakao.image.KImageView
 import io.github.kakaocup.kakao.screen.Screen
 import io.github.kakaocup.kakao.text.KButton
-import org.junit.Rule
 import org.junit.Test
 
 class FragmentOneScreen : Screen<FragmentOneScreen>() {
@@ -28,7 +23,7 @@ class FragmentOneUiTest {
 
     @Test
     fun fragmentOneNotCrash() {
-        val scenario = launchFragmentInContainer<FragmentOne>(
+        val scenario = launchFragmentInContainer<FirstFragment>(
             initialState = Lifecycle.State.INITIALIZED
         )
         scenario.moveToState(Lifecycle.State.RESUMED)
