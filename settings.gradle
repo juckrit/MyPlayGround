@@ -1,2 +1,3 @@
 rootProject.name = "MyPlayGround"
 include ':app'
+include ':Module1'
